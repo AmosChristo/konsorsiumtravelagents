@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>Konsorsium Tour And Travel</title>
+    <title>Konsorsium Travel Agent</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--<meta name="description" content="Free Template by Free-Template.co" />
@@ -21,96 +21,97 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- untuk menambahkan FAB-->
-     <style>
-  .fab-wrapper {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 2000;
-  }
+     <style>/* FAB Wrapper */
+.fab-wrapper {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 2000;
+}
 
-  /* FAB Main */
-  .fab-main {
-    width: 65px;
-    height: 65px;
-    background-color: #25D366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  .fab-main:hover {
-    transform: scale(1.12) rotate(8deg);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
-  }
-  .fab-main img {
-    width: 32px;
-  }
+/* FAB Main */
+.fab-main {
+  width: 55px;     /* lebih kecil */
+  height: 55px;    /* lebih kecil */
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.fab-main:hover {
+  transform: scale(1.12) rotate(8deg);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+.fab-main img {
+  width: 26px;   /* icon diperkecil */
+}
 
-  /* FAB Options */
-  .fab-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 12px;
-    opacity: 0;
-    transform: translateY(20px);
-    pointer-events: none;
-    transition: all 0.35s ease;
-  }
-  .fab-options.show {
-    opacity: 1;
-    transform: translateY(0px);
-    pointer-events: auto;
-  }
+/* FAB Options */
+.fab-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.35s ease;
+}
+.fab-options.show {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
 
-  .fab-option {
-    width: 55px;
-    height: 55px;
-    background-color: #25D366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 12px;
-    cursor: pointer;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-    transition: transform 0.25s ease;
-  }
-  .fab-option:hover {
-    transform: scale(1.15);
-  }
+.fab-option {
+  width: 48px;   /* lebih kecil */
+  height: 48px;  /* lebih kecil */
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease;
+}
+.fab-option:hover {
+  transform: scale(1.15);
+}
 
-  .fab-option img {
-    width: 30px;
-  }
+.fab-option img {
+  width: 22px;  /* icon opsi diperkecil */
+}
 
-  /* Label Admin */
-  .fab-label {
-    background: #fff;
-    padding: 6px 12px;
-    margin-right: 10px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    white-space: nowrap;
-  }
+/* Label Admin */
+.fab-label {
+  background: #fff;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  white-space: nowrap;
+}
 
-  .fab-item {
-    display: flex;
-    align-items: center;
-  }
+.fab-item {
+  display: flex;
+  align-items: center;
+}
+
 </style>
  </head>
   <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
     
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Konsorsium Tour And Travel</a>
+        <a class="navbar-brand" href="index.html">Konsorsium Travel Agent</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -119,22 +120,22 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#section-features" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#section-services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#section-services" class="nav-link">Paket Wisata</a></li>
             <!--<li class="nav-item"><a href="#section-pricing" class="nav-link">Pricing</a></li>-->
             <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#section-contact" class="nav-link">UMKM</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END nav -->
 
-    <section class="ftco-cover ftco-slant" style="background-image: url(images/bg_3.jpg);" id="section-home">
+    <section class="ftco-cover ftco-slant" style="background-image: url(images/bajo.jpg);" id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center ftco-vh-100">
           <div class="col-md-10">
             <h1 class="ftco-heading ftco-animate">Konsorsium Travel Agent</h1>
-            <h2 class="h5 ftco-subheading mb-5 ftco-animate"><span>wadah kerja sama yang terdiri dari beberapa biro perjalanan wisata</span></h2>    
+            <h2 class="h5 ftco-subheading mb-5 ftco-animate"><span>wadah kerja sama yang terdiri dari sekumpulan Travel Agent</span></h2>    
             <p><a href="wa.me/6285293179488" target="_blank" class="btn btn-primary ftco-animate">Hubungi Kami</a></p>
           </div>
         </div>
@@ -151,7 +152,7 @@
             <h2 class="text-uppercase ftco-uppercase">Mengapa Harus Kami</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Kami adalah kumpulan agen travel terpercaya, dengan jaminan kepuasan pelanggan serta layanan terbaik.</p>
+                <p class="lead">Kami adalah sekumpulan agen perjalanan wisata yang terpercaya, dengan jaminan kepuasan pelanggan serta layanan terbaik.</p>
               </div>
             </div>
           </div>
@@ -180,7 +181,7 @@
               <div class="ftco-icon mb-3"><span class="oi oi-person display-4 text-muted"></span></div>
               <div class="media-body">
                 <h5 class="mt-0">Kerjasama &amp; Komunikasi</h5>
-                <p class="mb-5">Melalui konsorsium, setiap agen dapat menggabungkan sumber daya, jaringan, dan keahlian sehingga mampu menawarkan paket wisata yang lebih kompetitif, lengkap, dan berkualitas.</p>
+                <p class="mb-5">Melalui konsorsium, setiap travel agen dapat menggabungkan sumber daya, jaringan, dan keahlian sehingga mampu menawarkan paket wisata yang lebih kompetitif, lengkap, dan berkualitas.</p>
                 <!--<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>-->
               </div>
             </div>
@@ -225,7 +226,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center ftco-animate">
-            <h2 class="text-uppercase ftco-uppercase">Paket</h2>
+            <h2 class="text-uppercase ftco-uppercase">Paket Wisata</h2>
             <div class="row justify-content-center mb-5">
               <div class="col-md-7">
                 <p class="lead">Dengan banyak pilihan paket yang sesuai dengan budget kamu, yang pastinya ramah di kantong.</p>
@@ -238,13 +239,13 @@
           <div class="col-lg-4 mb-5 ftco-animate">
             <figure><img src="images/travel1.jpeg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
             <div class="p-3">
-              <h3 class="h4">Paket Open Trip Bromo</h3>
-              <p class="mb-4">Liburan ke Bromo jadi lebih seru dan praktis bersama kami!. Mulai dari penjemputan, transportasi, tiket masuk, hingga dokumentasi, semua kami siapkan agar Anda bisa fokus menikmati keindahan alam Bromo.</p>
+              <h3 class="h4">Paket Wisata Kebumen 3D2N</h3>
+              <p class="mb-4">Paket wisata kebumen 3D2N ini cocok untuk kamu yang ingin menikmati keindahan alam Kebumen.</p>
               <p class="mb-4"><strong>Fasilitas</strong></p>
               <ul class="list-unstyled ftco-list-check text-left">
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Suttle Penjemputan PP</span></li>
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Jeep Bromo + Driver</span></li>
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Dokumentasi Selama Perjalanan</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Armada Pariwisata</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Hotel/Penginapan</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Dokumentasi Selama Perjalanan, Dan Lain Lain</span></li>
               </ul>
               <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Hubungi Kami</a></p>
             </div>
@@ -253,13 +254,13 @@
           <div class="col-lg-4 mb-5 ftco-animate">
             <figure><img src="images/travel2.jpeg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
             <div class="p-3">
-              <h3 class="h4">Paket Wisata Malang</h3>
-              <p class="mb-4">Paket wisata Malang 3 hari 2 malam menawarkan perjalanan seru mengunjungi destinasi populer seperti Jatim Park, Museum Angkut, dan Batu Night Spectacular. Nikmati udara sejuk pegunungan, wisata edukatif, serta kuliner khas Malang. Termasuk akomodasi, transportasi, dan tiket masuk wisata. Cocok untuk liburan keluarga.</p>
+              <h3 class="h4">Paket Gathering Glamour Lembang 2D1N</h3>
+              <p class="mb-4">Paket Wisata Gathering Glamour Lembang ini cocok untuk kamu yang ingin menikmati keindahan alam Lembang</p>
               <p><strong>Fasilitas</strong></p>
               <ul class="list-unstyled ftco-list-check text-left">
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>transportasi (Mobil+Driver+BBM,Parkir)</span></li>
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Fotografer/Tourleader</span></li>
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Menginap 2 Malam</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>transportasi</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Glamping Tend 1 Night</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Gala Dinner, Dan Lain Lain</span></li>
               </ul>
               <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Hubungi Kami</a></p>
             </div>
@@ -268,15 +269,15 @@
           <div class="col-lg-4 mb-5 ftco-animate">
             <figure><img src="images/travel3.jpeg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
             <div class="p-3">
-              <h3 class="h4">Outbound &amp; Gathering
-              </h3>
-              <p class="mb-4">Gathering perusahaan yang bagus akan membuat karyawan kantor refresh kembali, menghilangkan stress, meningkatkan semangat kerja, dan membuat terjalinnya hubungan yang semakin erat di antara sesama karyawan kantor.</p>
+              <h3 class="h4">Fam Trip Lombok</h3>
+              <p class="mb-4">Paket Wisata Fam Trip Lombok ini cocok untuk kamu yang ingin menikmati keindahan alam Lombok</p>
+              
               <p><strong>Fasilitas</strong></p>
               <ul class="list-unstyled ftco-list-check text-left">
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>transportasi (Mobil+Driver+BBM,Parkir)</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>transportasi </span></li>
                 <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Tour guide</span></li>
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Air Mineral &amp; Snack</span></li>
-                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Fotografer Selama Perjalan</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Hotel Sundacer Lombok</span></li>
+              
                 </ul>
                 <p><a href="#" class="btn btn-primary btn-sm">Hubungi Kami</a></p>
             </div>
@@ -459,13 +460,12 @@
 
     <section class="ftco-section ftco-slant ftco-slant-light" id="section-about">
       <div class="container">
-
         <div class="row mb-5">
           <div class="col-md-12 text-center ftco-animate">
             <h2 class="text-uppercase ftco-uppercase">About Us</h2>
             <div class="row justify-content-center mb-5">
               <div class="col-md-7">
-                <p class="lead">Konsorsium Travel Agent adalah sebuah wadah kerja sama yang terdiri dari beberapa biro perjalanan wisata yang bergabung untuk mencapai tujuan bersama dalam pengembangan dan pemasaran produk wisata.</p>
+                <p class="lead">Konsorsium Travel Agent adalah sebuah wadah kerja sama yang terdiri dari beberapa biro perjalanan wisata yang bergabung untuk mencapai tujuan bersama dalam pengembangan dan pemasaran produk wisata. Melalui konsorsium, setiap agen dapat menggabungkan sumber daya, jaringan, dan keahlian sehingga mampu menawarkan paket wisata yang lebih kompetitif, lengkap, dan berkualitas. Kerja sama ini juga meningkatkan daya tawar agen terhadap pihak hotel, maskapai, maupun pengelola destinasi karena dilakukan secara kolektif, bukan individu. Selain itu, konsorsium travel agent mempermudah koordinasi dalam penyelenggaraan program besar seperti familiarization trip (famtrip), promosi destinasi, dan penyusunan paket wisata terpadu, sehingga hasilnya lebih terstruktur, efisien, dan memberikan dampak promosi yang lebih luas. Dengan adanya konsorsium, agen-agen perjalanan dapat saling mendukung dalam memajukan sektor pariwisata dan meningkatkan daya saing di pasar.</p>
               </div>
             </div>
           </div>
@@ -475,7 +475,7 @@
 
         <div class="row no-gutters align-items-center ftco-animate">
           <div class="col-md-6 mb-md-0 mb-5">
-            <img src="images/5.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            <img src="images/Team.jpeg" alt="Free Template by Free-Template.co" class="img-fluid">
           </div>
           <div class="col-md-6 p-md-5">
             <h3 class="h3 mb-4">Kerjasama Antar Tim yang Berkolaborasi</h3>
@@ -485,7 +485,7 @@
         </div>
         <div class="row no-gutters align-items-center ftco-animate">
           <div class="col-md-6 order-md-3 mb-md-0 mb-5">
-            <img src="images/4.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            <img src="images/bromo.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
           </div>
           <div class="col-md-6 p-md-5 order-md-1">
             <h3 class="h3 mb-4">Perjalanan Menyenangkan dengan Agen Terpercaya</h3>
@@ -569,10 +569,9 @@
                 <div class="ftco-footer-widget mb-4">
                   <h2 class="ftco-heading-2">Useful Link</h2>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="py-2 d-block">About</a></li>
-                    <li><a href="#" class="py-2 d-block">Jobs</a></li>
-                    <li><a href="#" class="py-2 d-block">Press</a></li>
-                    <li><a href="#" class="py-2 d-block">News</a></li>
+                    <li><a href="#" class="py-2 d-block">gmail     : halo.kta01@gmail.com</a></li>
+                    <li><a href="#" class="py-2 d-block">instagram : halo.kta</a></li>
+                 
                   </ul>
                 </div>
               </div>
@@ -604,8 +603,8 @@
             <div class="ftco-footer-widget mb-4">
               <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
                 <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-mail"></span></a></li>
+                <li><a href="https://www.instagram.com/halo_kta/"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -660,7 +659,7 @@
 
   <!-- FAB MAIN -->
   <div class="fab-main" id="fabMain">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Chat Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="chat Icon">
   </div>
 </div>
 <!-- END FAB BUTTON -->
