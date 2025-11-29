@@ -8,6 +8,14 @@ body {
   background: #fff;
   color: #859196; }
 
+
+#section-about .col-md-7 p.lead {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+}
+
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
