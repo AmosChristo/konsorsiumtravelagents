@@ -19,7 +19,93 @@
 
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+
+    <!-- untuk menambahkan FAB-->
+     <style>
+  .fab-wrapper {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2000;
+  }
+
+  /* FAB Main */
+  .fab-main {
+    width: 65px;
+    height: 65px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .fab-main:hover {
+    transform: scale(1.12) rotate(8deg);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+  }
+  .fab-main img {
+    width: 32px;
+  }
+
+  /* FAB Options */
+  .fab-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.35s ease;
+  }
+  .fab-options.show {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+  }
+
+  .fab-option {
+    width: 55px;
+    height: 55px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease;
+  }
+  .fab-option:hover {
+    transform: scale(1.15);
+  }
+
+  .fab-option img {
+    width: 30px;
+  }
+
+  /* Label Admin */
+  .fab-label {
+    background: #fff;
+    padding: 6px 12px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    white-space: nowrap;
+  }
+
+  .fab-item {
+    display: flex;
+    align-items: center;
+  }
+</style>
+ </head>
   <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
     
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -65,7 +151,7 @@
             <h2 class="text-uppercase ftco-uppercase">Mengapa Harus Kami</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">Kami adalah agen travel terpecaya sejak tahun 2015, dengan jaminan kepuasan pelanggan 100% serta layanan terbaik.</p>
+                <p class="lead">Kami adalah kumpulan agen travel terpercaya, dengan jaminan kepuasan pelanggan serta layanan terbaik.</p>
               </div>
             </div>
           </div>
@@ -74,7 +160,7 @@
               <div class="ftco-icon mb-3"><span class="oi oi-thumb-up display-4 text-muted"></span></div>
               <div class="media-body">
                 <h5 class="mt-0">Agen yang Profesional</h5>
-                <p class="mb-5">Hadir sebagai agen perjalanan anda yang dapat dipercaya, dengan pelayanan terbaik..</p>
+                <p class="mb-5">Hadir sebagai agen perjalanan anda yang dapat dipercaya, dengan pelayanan terbaik..</p><br><br><br>
                 <!--<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>-->
               </div>
             </div>
@@ -84,7 +170,7 @@
               <div class="ftco-icon mb-3"><span class="oi oi-bolt display-4 text-muted"></span></div>
               <div class="media-body">
                 <h5 class="mt-0">Admin yang Fast Respon dan Ramah</h5>
-                <p class="mb-5">Admin kami akan membantu anda jika mengalami kesulitan, layanan 24 jam..</p>
+                <p class="mb-5">Admin kami akan membantu anda jika mengalami kesulitan, layanan 24 jam..</p><br><br>
                 <!--<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>-->
               </div>
             </div>
@@ -150,7 +236,7 @@
         <!-- END row -->
         <div class="row">
           <div class="col-lg-4 mb-5 ftco-animate">
-            <figure><img src="images/1.png" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
+            <figure><img src="images/travel1.jpeg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
             <div class="p-3">
               <h3 class="h4">Paket Open Trip Bromo</h3>
               <p class="mb-4">Liburan ke Bromo jadi lebih seru dan praktis bersama kami!. Mulai dari penjemputan, transportasi, tiket masuk, hingga dokumentasi, semua kami siapkan agar Anda bisa fokus menikmati keindahan alam Bromo.</p>
@@ -165,7 +251,7 @@
           </div>
 
           <div class="col-lg-4 mb-5 ftco-animate">
-            <figure><img src="images/2.jpg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
+            <figure><img src="images/travel2.jpeg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
             <div class="p-3">
               <h3 class="h4">Paket Wisata Malang</h3>
               <p class="mb-4">Paket wisata Malang 3 hari 2 malam menawarkan perjalanan seru mengunjungi destinasi populer seperti Jatim Park, Museum Angkut, dan Batu Night Spectacular. Nikmati udara sejuk pegunungan, wisata edukatif, serta kuliner khas Malang. Termasuk akomodasi, transportasi, dan tiket masuk wisata. Cocok untuk liburan keluarga.</p>
@@ -180,7 +266,7 @@
           </div>
 
           <div class="col-lg-4 mb-5 ftco-animate">
-            <figure><img src="images/3.jpg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
+            <figure><img src="images/travel3.jpeg" alt="Free Template by Free-Template.co" class="img-fluid"></figure>
             <div class="p-3">
               <h3 class="h4">Outbound &amp; Gathering
               </h3>
@@ -550,6 +636,45 @@
 
     <script src="js/main.js"></script>
 
-    
+    <!-- FAB BUTTON -->
+<div class="fab-wrapper">
+  <div class="fab-options" id="fabMenu">
+
+    <!-- ADMIN 1 -->
+    <div class="fab-item">
+      <div class="fab-label">Admin 1</div>
+      <a href="https://wa.me/6281111111" target="_blank" class="fab-option">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA 1">
+      </a>
+    </div>
+
+    <!-- ADMIN 2 -->
+    <div class="fab-item">
+      <div class="fab-label">Admin 2</div>
+      <a href="https://wa.me/6282222222" target="_blank" class="fab-option">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA 2">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- FAB MAIN -->
+  <div class="fab-main" id="fabMain">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Chat Icon">
+  </div>
+</div>
+<!-- END FAB BUTTON -->
+</div>
+
+<script>
+  const fabMain = document.getElementById("fabMain");
+  const fabMenu = document.getElementById("fabMenu");
+
+  fabMain.addEventListener("click", () => {
+    fabMenu.classList.toggle("show");
+  });
+</script>
+
+   
   </body>
 </html>
