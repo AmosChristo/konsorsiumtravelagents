@@ -21,89 +21,100 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- untuk menambahkan FAB-->
-     <style>/* FAB Wrapper */
+     <style>
+    /* FAB Wrapper */
+/* FAB Wrapper */
 .fab-wrapper {
   position: fixed;
   bottom: 25px;
   right: 25px;
   z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Penting agar semua item bertumpuk di kanan */
 }
 
-/* FAB Main */
+/* FAB Options (menu) */
+.fab-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* item align ke kanan */
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.fab-options.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Tiap item admin */
+.fab-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* label tetap di kiri, icon tetap kanan */
+  margin-bottom: 10px;
+}
+
+/* Label */
+.fab-label {
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-right: 10px; /* jarak antara label & icon */
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Icon WA */
+.fab-option {
+  width: 48px;
+  height: 48px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.fab-option:hover {
+  transform: scale(1.15);
+}
+
+.fab-option img {
+  width: 22px;
+}
+
+/* FAB utama */
 .fab-main {
-  width: 55px;     /* lebih kecil */
-  height: 55px;    /* lebih kecil */
-  background-color: #25D366;
+  width: 55px;
+  height: 55px;
+  background: #25D366;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.3s ease;
 }
+
 .fab-main:hover {
   transform: scale(1.12) rotate(8deg);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
 }
+
 .fab-main img {
-  width: 26px;   /* icon diperkecil */
+  width: 26px;
 }
 
-/* FAB Options */
-.fab-options {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 12px;
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-  transition: all 0.35s ease;
-}
-.fab-options.show {
-  opacity: 1;
-  transform: translateY(0px);
-  pointer-events: auto;
-}
-
-.fab-option {
-  width: 48px;   /* lebih kecil */
-  height: 48px;  /* lebih kecil */
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 12px;
-  cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-  transition: transform 0.25s ease;
-}
-.fab-option:hover {
-  transform: scale(1.15);
-}
-
-.fab-option img {
-  width: 22px;  /* icon opsi diperkecil */
-}
-
-/* Label Admin */
-.fab-label {
-  background: #fff;
-  padding: 6px 12px;
-  margin-right: 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  white-space: nowrap;
-}
-
-.fab-item {
-  display: flex;
-  align-items: center;
-}
 
 </style>
  </head>
@@ -642,7 +653,7 @@
     <!-- ADMIN 1 -->
     <div class="fab-item">
       <div class="fab-label">Admin 1</div>
-      <a href="https://wa.me/628111030348" target="_blank" class="fab-option">
+      <a href="https://wa.me/62111030348" target="_blank" class="fab-option">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA 1">
       </a>
     </div>
@@ -671,6 +682,9 @@
 
   fabMain.addEventListener("click", () => {
     fabMenu.classList.toggle("show");
+
+    //document.getElementById("fabMain").addEventListener("click", function () {
+    //document.getElementById("fabOptions").classList.toggle("show");
   });
 </script>
 
