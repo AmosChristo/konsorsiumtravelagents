@@ -135,6 +135,34 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
   letter-spacing: .1em; }
 
+/* Logo di navbar */
+.navbar-logo {
+  height: 60px;        /* kecil & proporsional */
+  width: auto;
+  margin-right: 10px; /* jarak logo ke teks */
+}
+
+/* Teks brand */
+.navbar-text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 28px;
+  }
+
+  .navbar-text {
+    display: none;
+  }
+}
+
 .bg-image, .ftco-cover {
   background-size: cover;
   background-repeat: no-repeat; }
@@ -177,7 +205,9 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       right: 0; }
   .ftco-cover .ftco-vh-100 {
-    min-height: 700px !important; }
+    min-height: auto;
+
+ }
 
 .ftco-slant {
   position: relative;
@@ -275,24 +305,27 @@ textarea {
 .bg-primary {
   background: #4586FF !important; }
 
+.section {
+  padding: 0;
+}
+
 .ftco-section,
 .ftco-footer {
-  padding: 7em 0 7em 0; }
-  .ftco-section.ftco-slant,
-  .ftco-footer.ftco-slant {
-    padding: 7em 0 22em 0; }
-  .ftco-section .ftco-heading,
-  .ftco-footer .ftco-heading {
-    font-size: 40px;
-    line-height: 1.5; }
-    @media screen and (max-width: 768px) {
-      .ftco-section .ftco-heading,
-      .ftco-footer .ftco-heading {
-        font-size: 30px; } }
-  .ftco-section.bg-light,
-  .ftco-footer.bg-light {
-    background: #f2f2f2 !important; }
-
+  padding: 4em 0;
+}
+@media (max-width: 768px) {
+  .ftco-section,
+  .ftco-footer {
+    padding: 2.5em 0;
+  }
+}
+.ftco-vh-100 {
+  min-height: 100vh;
+  height: auto;
+}
+.ftco-navbar-light.scrolled {
+  margin-top: 0;
+}
 .ftco-bg-dark {
   background: #263135; }
 
@@ -521,6 +554,25 @@ textarea {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+/* GANTI INI */
+section {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0; /* mobile */
+  }
+}
+#section-home {
+  min-height: 100vh;
+}
+.carousel-img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
@@ -552,3 +604,27 @@ textarea {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Card paket */
+.package-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+   
+.package-banner {
+  width: 100%;
+  height: 200px;          /* KUNCI UTAMA */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+/* Gambar */
+.package-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* POTONG RAPI */
+  display: block;
+}
+
